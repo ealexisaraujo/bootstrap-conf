@@ -250,17 +250,54 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalCompraTitle">Modal title</h5>
+              <h5 class="modal-title" id="modalCompraTitle">Adquirir Tickets</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+            <form class="was-validated">
+              <div class="form-row">
+                  <div class="col form-group">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"id="basic-addon1">@</span>
+                      </div>
+                      <input type="text"class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      <div class="invalid-feedback">
+                        Tu Username es incorrecto, ingrésalo nuevamente
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="col form-group">
+                    <label class="text-platzi-modal"for="inputPassword5">Password</label>
+                    <input type="password"id="inputPassword5"class="form-control" aria-describedby="passwordHelpBlock" placeholder="Password">
+                    <div class="invalid-feedback">
+                      Tu password es incorrecto
+                    </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                <div class="col form-group">
+                  <div class="form-check">
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox"class="custom-control-input"id="customControlValidation1" required>
+                      <label class="custom-control-label"for="customControlValidation1">Acepto los términos y condicones del sorteo</label>
+                      <div class="invalid-feedback">  Debes aceptar los términos y condiciones para acceder al sorteo.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+              <div class="alert alert-success" role="alert">
+                  Recibirás un correo de confirmación si sales sorteado.
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-platzi">Comprar</button>
             </div>
           </div>
         </div>
